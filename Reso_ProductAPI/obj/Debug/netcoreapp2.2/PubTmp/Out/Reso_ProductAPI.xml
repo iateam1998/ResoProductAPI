@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Reso_ProductAPI</name>
+    </assembly>
+    <members>
+        <member name="M:Reso_ProductAPI.Controllers.ProductCategoryController.GetCategoryList(System.String,System.Int32)">
+            <summary>
+            Get Category Of Store
+            </summary>
+            <param name="token">Valid token (Required)</param>
+            <param name="storeid">Store Id (Required)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Reso_ProductAPI.Controllers.ProductController.GetProduct(System.String,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Get Product From Store
+            </summary>
+            <param name="token">Token (Required)</param>
+            <param name="storeId">Store Id (Required)</param>
+            <param name="categoryId">Category Id (Required)</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

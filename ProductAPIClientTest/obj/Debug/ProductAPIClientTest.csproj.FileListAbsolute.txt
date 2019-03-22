@@ -1,0 +1,13 @@
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\bin\Debug\ProductAPIClientTest.exe.config
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\bin\Debug\ProductAPIClientTest.exe
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\bin\Debug\ProductAPIClientTest.pdb
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\bin\Debug\Newtonsoft.Json.dll
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\bin\Debug\ProductAPIClientV1.0.dll
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\bin\Debug\ProductAPIClientV1.0.pdb
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\bin\Debug\Newtonsoft.Json.pdb
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\bin\Debug\Newtonsoft.Json.xml
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\obj\Debug\ProductAPIClientTest.csprojAssemblyReference.cache
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\obj\Debug\ProductAPIClientTest.csproj.CoreCompileInputs.cache
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\obj\Debug\ProductAPIClientTest.csproj.CopyComplete
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\obj\Debug\ProductAPIClientTest.exe
+D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientTest\obj\Debug\ProductAPIClientTest.pdb

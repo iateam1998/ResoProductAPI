@@ -1,0 +1,11 @@
+D:\Wisky\Project\Reso_ProductAPI\DataService\bin\Release\netcoreapp2.2\DataService.deps.json
+D:\Wisky\Project\Reso_ProductAPI\DataService\bin\Release\netcoreapp2.2\DataService.runtimeconfig.json
+D:\Wisky\Project\Reso_ProductAPI\DataService\bin\Release\netcoreapp2.2\DataService.runtimeconfig.dev.json
+D:\Wisky\Project\Reso_ProductAPI\DataService\bin\Release\netcoreapp2.2\DataService.dll
+D:\Wisky\Project\Reso_ProductAPI\DataService\bin\Release\netcoreapp2.2\DataService.pdb
+D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Release\netcoreapp2.2\DataService.csprojAssemblyReference.cache
+D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Release\netcoreapp2.2\DataService.csproj.CoreCompileInputs.cache
+D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Release\netcoreapp2.2\DataService.AssemblyInfoInputs.cache
+D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Release\netcoreapp2.2\DataService.AssemblyInfo.cs
+D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Release\netcoreapp2.2\DataService.dll
+D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Release\netcoreapp2.2\DataService.pdb

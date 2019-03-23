@@ -5687,11 +5687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Wisky\\Project\\Reso_ProductAPI\\DataService\\DataService.csproj",
+      "projectUniqueName": "D:\\Wisky\\CloneProject\\Reso_ProductAPI\\DataService\\DataService.csproj",
       "projectName": "DataService",
-      "projectPath": "D:\\Wisky\\Project\\Reso_ProductAPI\\DataService\\DataService.csproj",
+      "projectPath": "D:\\Wisky\\CloneProject\\Reso_ProductAPI\\DataService\\DataService.csproj",
       "packagesPath": "C:\\Users\\gioan\\.nuget\\packages\\",
-      "outputPath": "D:\\Wisky\\Project\\Reso_ProductAPI\\DataService\\obj\\",
+      "outputPath": "D:\\Wisky\\CloneProject\\Reso_ProductAPI\\DataService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -13223,11 +13223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Wisky\\Project\\Reso_ProductAPI\\Reso_ProductAPI\\Reso_ProductAPI.csproj",
+      "projectUniqueName": "D:\\Wisky\\CloneProject\\Reso_ProductAPI\\Reso_ProductAPI\\Reso_ProductAPI.csproj",
       "projectName": "Reso_ProductAPI",
-      "projectPath": "D:\\Wisky\\Project\\Reso_ProductAPI\\Reso_ProductAPI\\Reso_ProductAPI.csproj",
+      "projectPath": "D:\\Wisky\\CloneProject\\Reso_ProductAPI\\Reso_ProductAPI\\Reso_ProductAPI.csproj",
       "packagesPath": "C:\\Users\\gioan\\.nuget\\packages\\",
-      "outputPath": "D:\\Wisky\\Project\\Reso_ProductAPI\\Reso_ProductAPI\\obj\\",
+      "outputPath": "D:\\Wisky\\CloneProject\\Reso_ProductAPI\\Reso_ProductAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13246,8 +13246,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Wisky\\Project\\Reso_ProductAPI\\DataService\\DataService.csproj": {
-              "projectPath": "D:\\Wisky\\Project\\Reso_ProductAPI\\DataService\\DataService.csproj"
+            "D:\\Wisky\\CloneProject\\Reso_ProductAPI\\DataService\\DataService.csproj": {
+              "projectPath": "D:\\Wisky\\CloneProject\\Reso_ProductAPI\\DataService\\DataService.csproj"
             }
           }
         }

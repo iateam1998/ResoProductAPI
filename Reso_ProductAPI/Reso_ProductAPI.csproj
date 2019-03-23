@@ -11,7 +11,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;1591</NoWarn>
-    <DocumentationFile>D:\Wisky\Project\Reso_ProductAPI\Reso_ProductAPI\Reso_ProductAPI.xml</DocumentationFile>
+    <DocumentationFile>D:\Wisky\CloneProject\Reso_ProductAPI\Reso_ProductAPI\Reso_ProductAPI.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

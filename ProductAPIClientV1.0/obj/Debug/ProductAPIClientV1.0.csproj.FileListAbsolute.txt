@@ -3,3 +3,9 @@ D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientV1.0\bin\Debug\ProductAPIClient
 D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientV1.0\obj\Debug\ProductAPIClientV1.0.csproj.CoreCompileInputs.cache
 D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientV1.0\obj\Debug\ProductAPIClientV1.0.dll
 D:\Wisky\Project\Reso_ProductAPI\ProductAPIClientV1.0\obj\Debug\ProductAPIClientV1.0.pdb
+D:\Wisky\CloneProject\Reso_ProductAPI\ProductAPIClientV1.0\bin\Debug\ProductAPIClientV1.0.dll
+D:\Wisky\CloneProject\Reso_ProductAPI\ProductAPIClientV1.0\bin\Debug\ProductAPIClientV1.0.pdb
+D:\Wisky\CloneProject\Reso_ProductAPI\ProductAPIClientV1.0\obj\Debug\ProductAPIClientV1.0.csprojAssemblyReference.cache
+D:\Wisky\CloneProject\Reso_ProductAPI\ProductAPIClientV1.0\obj\Debug\ProductAPIClientV1.0.csproj.CoreCompileInputs.cache
+D:\Wisky\CloneProject\Reso_ProductAPI\ProductAPIClientV1.0\obj\Debug\ProductAPIClientV1.0.dll
+D:\Wisky\CloneProject\Reso_ProductAPI\ProductAPIClientV1.0\obj\Debug\ProductAPIClientV1.0.pdb

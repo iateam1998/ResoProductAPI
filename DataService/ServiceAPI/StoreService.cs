@@ -7,7 +7,7 @@ using System.Text;
 
 namespace DataService.ServiceAPI
 {
-    public interface IStoreService : IBaseService<Store,StoreViewModel>
+    public interface IStoreService : IBaseService<Store, StoreViewModel>
     {
         StoreViewModel GetStoreByIdSync(int storeId);
     }
@@ -19,7 +19,7 @@ namespace DataService.ServiceAPI
         public StoreViewModel GetStoreByIdSync(int storeId)
         {
             var store = this.FirstOrDefault(p => p.Id == storeId);
-            if(store == null)
+            if (store == null)
             {
                 return null;
             }

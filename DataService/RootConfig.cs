@@ -28,6 +28,8 @@ namespace DataService
             services.AddScoped(typeof(IProductDetailMappingService), typeof(ProductDetailMappingService));
             services.AddScoped(typeof(ICategoryExtraMappingService), typeof(CategoryExtraMappingService));
             services.AddScoped(typeof(IProductCategoryService), typeof(ProductCategoryService));
+            services.AddScoped(typeof(IProductImageService), typeof(ProductImageService));
+            services.AddScoped(typeof(IProductComboDetailService), typeof(ProductComboDetailService));
 
             #endregion
 

@@ -12,6 +12,7 @@ namespace DataService.ServiceAPI
     {
         double GetPriceByStore(int storeId, int productId);
         double GetDiscountByStore(int storeId, int productId);
+        IEnumerable<ProductDetailMappingViewModel> GetProductDetailByStoreId(int storeId);
         IEnumerable<ProductDetailMappingViewModel> GetProductByStoreID(int storeId, int brandId);
     }
     public class ProductDetailMappingService : BaseService<ProductDetailMapping, ProductDetailMappingViewModel>, IProductDetailMappingService
@@ -22,7 +23,7 @@ namespace DataService.ServiceAPI
             _serviceProvider = serviceProvider;
         }
 
-        private IEnumerable<ProductDetailMappingViewModel> GetByStoreActiveById(int storeId)
+        public IEnumerable<ProductDetailMappingViewModel> GetProductDetailByStoreId(int storeId)
         {
             var result = this.Get(a => a.StoreId == storeId && a.Active == true);
             return result;
@@ -32,7 +33,6 @@ namespace DataService.ServiceAPI
             var _productService = ServiceFactory.CreateService<IProductService>(_serviceProvider);
             var table1 = _productService.GetAllProductsByBrand(brandId);
             var table2 = this.Get(a => a.StoreId == storeId && a.Active == true);
-            //var table2 = this.Get(a => a.StoreId == storeId && a.Active == true);
             var join = from t1 in table1
                        join t2 in table2
                        on t1.ProductId equals t2.ProductId
@@ -52,7 +52,8 @@ namespace DataService.ServiceAPI
         }
         public double GetPriceByStore(int storeId, int productId)
         {
-            var productDetail = this.Get(pd => pd.StoreId == storeId && pd.ProductId == productId).FirstOrDefault();
+            var productDetail = this.Get(pd => pd.StoreId == storeId && pd.ProductId == productId)
+                .FirstOrDefault();
             if (productDetail != null)
             {
                 return productDetail.Price.GetValueOrDefault();
@@ -61,7 +62,8 @@ namespace DataService.ServiceAPI
         }
         public double GetDiscountByStore(int storeId, int productId)
         {
-            var product = this.Get(a => a.ProductId == productId && a.StoreId == storeId).FirstOrDefault();
+            var product = this.Get(a => a.ProductId == productId && a.StoreId == storeId)
+                .FirstOrDefault();
 
             if (product != null)
             {

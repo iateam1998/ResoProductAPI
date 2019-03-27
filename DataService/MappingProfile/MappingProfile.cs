@@ -29,6 +29,9 @@ namespace DataService.MappingProfileModel
             this.CreateMap<ProductItemCategory, ProductItemCategoryViewModel>();
             this.CreateMap<ProductItemCategoryViewModel, ProductItemCategory>();
 
+            this.CreateMap<ProductImage, ProductImageViewModel>();
+            this.CreateMap<ProductImageViewModel, ProductImage>();
+
             this.CreateMap<ProductComboDetail, ProductComboDetailViewModel>();
             this.CreateMap<ProductComboDetailViewModel, ProductComboDetail>();
 

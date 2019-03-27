@@ -8,3 +8,14 @@ D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService
 D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService.AssemblyInfo.cs
 D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService.dll
 D:\Wisky\Project\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService.pdb
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\bin\Debug\netcoreapp2.2\DataService.deps.json
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\bin\Debug\netcoreapp2.2\DataService.runtimeconfig.json
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\bin\Debug\netcoreapp2.2\DataService.runtimeconfig.dev.json
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\bin\Debug\netcoreapp2.2\DataService.dll
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\bin\Debug\netcoreapp2.2\DataService.pdb
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService.csproj.CoreCompileInputs.cache
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService.AssemblyInfoInputs.cache
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService.AssemblyInfo.cs
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService.dll
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService.pdb
+D:\Wisky\CloneProject\Reso_ProductAPI\DataService\obj\Debug\netcoreapp2.2\DataService.csprojAssemblyReference.cache

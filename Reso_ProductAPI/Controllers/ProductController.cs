@@ -28,7 +28,7 @@ namespace Reso_ProductAPI.Controllers
         /// </summary>
         /// <param name="token">Token (Required)</param>
         /// <param name="storeId">Store Id (Required)</param>
-        /// <param name="categoryId">Category Id (Required)</param>
+        /// <param name="categoryId">Category Id</param>
         /// <returns></returns>
         [HttpGet]
         [Route("{token}/{storeId}")]
@@ -46,7 +46,7 @@ namespace Reso_ProductAPI.Controllers
                     .Where(w => (categoryId == null || w.Product.CatId == categoryId));
                 try
                 {
-                    productList = MapProduct(listProducts, storeId);
+                    productList = _productService.MapProduct(listProducts, storeId);
                 }
                 catch (Exception e)
                 {
@@ -57,88 +57,47 @@ namespace Reso_ProductAPI.Controllers
             return BadRequest("Invalid Token!");
         }
 
-
-
-        private List<ProductApiViewModel> MapProduct(IEnumerable<ProductDetailMappingViewModel> listP, int terminalId)
+        /// <summary>
+        /// Get Product From Store
+        /// </summary>
+        /// <param name="token">Token (Required)</param>
+        /// <param name="storeId">Store Id (Required)</param>
+        /// <param name="productId">Product Id (Required)</param>
+        /// <param name="categoryId">Category Id</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("{token}/{storeId}/{productId}")]
+        public IActionResult GetProductByProductId(string token, int storeId, int productId, [FromQuery] int? categoryId)
         {
-            var productList = new List<ProductApiViewModel>();
-            foreach (var item in listP)
+            bool check = _utils.CheckToken(token);
+            var _productService = ServiceFactory.CreateService<IProductService>(_serviceProvider);
+            var _storeService = ServiceFactory.CreateService<IStoreService>(_serviceProvider);
+            var _productDetailMappingService = ServiceFactory.CreateService<IProductDetailMappingService>(_serviceProvider);
+            if (check)
             {
-                if (item.Product != null)
+                var productList = new List<ProductApiViewModel>();
+                var store = _storeService.GetStoreByIdSync(storeId);
+                var result = new ProductApiViewModel();
+                var listProducts = _productDetailMappingService.GetProductByStoreID(storeId, store.BrandId.Value)
+                    .Where(w => (categoryId == null || w.Product.CatId == categoryId));
+                try
                 {
-                    var p = new ProductApiViewModel()
+                    productList = _productService.MapProduct(listProducts, storeId);
+                    if (productList.Count < 1)
                     {
-                        ProductId = item.Product.ProductId,
-                        ProductName = item.Product.ProductName,
-                        ShortName = null,
-                        Code = item.Product.Code,
-                        PicURL = item.Product.PicUrl,
-                        Price = item.Product.Price,
-                        DiscountPercent = item.Product.DiscountPercent,
-                        DiscountPrice = item.Product.DiscountPrice,
-                        CatID = item.Product.CatId,
-                        ProductType = item.Product.ProductType,
-                        DisplayOrder = item.Product.DisplayOrder,
-                        IsMenuDisplay = true,
-                        IsAvailable = item.Product.IsAvailable,
-                        PosX = (int)item.Product.PosX.GetValueOrDefault(),
-                        PosY = (int)item.Product.PosY.GetValueOrDefault(),
-                        ColorGroup = item.Product.ColorGroup,
-                        Group = (int)item.Product.Group.GetValueOrDefault(),
-                        GeneralProductId = item.Product.GeneralProductId,
-                        Att1 = item.Product.Att1,
-                        Att2 = item.Product.Att2,
-                        Att3 = item.Product.Att3,
-                        MaxExtra = 0,
-                        IsUsed = true,
-                        HasExtra = false,
-                        IsFixedPrice = item.Product.IsFixedPrice,
-                        IsDefaultChildProduct = item.Product.IsDefaultChildProduct == (int)SaleTypeEnum.DefaultNothing ? false : true,
-                        IsMostOrder = item.Product.IsMostOrdered,
-
-                        Category = new ProductCategoryApiViewModel()
-
-                        {
-                            Code = item.Product.CatId,
-                            Name = item.Product.Cat.CateName,
-                            Type = item.Product.Cat.Type,
-                            DisplayOrder = item.Product.Cat.DisplayOrder,
-                            IsExtra = item.Product.Cat.IsExtra ? 1 : 0,
-                            IsDisplayed = item.Product.Cat.IsDisplayed.Value,
-                            IsUsed = true,
-                            AdjustmentNote = item.Product.Cat.AdjustmentNote,
-                            ImageFontAwsomeCss = item.Product.Cat.ImageFontAwsomeCss,
-                            ParentCateId = item.Product.Cat.ParentCateId
-                        }
-                    };
-                    if (p.IsFixedPrice == false)
-                    {
-                        var _productDetailMappingService = ServiceFactory.CreateService<IProductDetailMappingService>(_serviceProvider);
-                        var priceProduct = _productDetailMappingService.GetPriceByStore(terminalId, item.Product.ProductId);
-                        if (priceProduct != 0)
-                        {
-                            p.Price = priceProduct;
-                        }
-                        else
-                        {
-                            p.Price = item.Product.Price;
-                        }
-
-                        var discountProduct = _productDetailMappingService.GetDiscountByStore(terminalId, item.Product.ProductId);
-                        if (priceProduct != 0)
-                        {
-                            p.DiscountPercent = discountProduct;
-                        }
-                        else
-                        {
-                            p.DiscountPercent = item.Product.DiscountPercent;
-                        }
-
+                        return NotFound();
                     }
-                    productList.Add(p);
+                    else { result = productList.FirstOrDefault(p => p.ProductId == productId); }
                 }
+                catch (Exception e)
+                {
+                    return NotFound(e.Message);
+                }
+                return Ok(result);
             }
-            return productList;
+            return BadRequest("Invalid Token!");
         }
+
+
     }
 }

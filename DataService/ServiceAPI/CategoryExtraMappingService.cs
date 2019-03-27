@@ -19,7 +19,7 @@ namespace DataService.ServiceAPI
 
         public IEnumerable<CategoryExtraMappingViewModel> GetCategoryExtraMappings()
         {
-            var result = this.Get(p=>p.IsEnable ==true);
+            var result = this.Get(p => p.IsEnable == true);
             return result;
         }
     }
